@@ -1,5 +1,5 @@
 #magiccarousel {
-    padding: 350px;
+    padding: 100px;
 }
 
 .carousel-inner {
@@ -13,4 +13,37 @@
 
 .pointer {
     cursor: pointer;
+}
+
+.col-md-2 {
+    padding: 30px;
+}
+
+#card1home {
+
+    padding-top: 100px;
+}
+
+#card2home {
+
+    padding-top: 100px;
+}
+
+
+.card-img-overlay {
+    padding-top: 100px;
+    color: rgb(255, 255, 255);
+
+}
+
+.img-fluid {
+    background-color: black;
+}
+
+.card {
+    box-shadow: 0px 5px 15px rgb(238, 177, 10);
+}
+
+.card-text {
+    padding-bottom: 40px;
 }
