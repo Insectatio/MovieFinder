@@ -1,0 +1,38 @@
+<div class="container">
+  <div *ngIf='latesttvser' class="col-md-12">
+    <div class="card">
+      <div class="card-title">
+        <h1><strong>Name: </strong> {{latesttvser?.name}}</h1>
+        <img class="mx-auto d-block" *ngIf='latesttvser.backdrop_path' src="https://image.tmdb.org/t/p/w500{{latesttvser.backdrop_path}}" alt="Image Not Found"
+          id="imgcard">
+      </div>
+      <br>
+      <div class="row">
+        <div class="col-md-12">
+          <div class="card-body">
+            <p><strong>Language: </strong>{{latesttvser?.original_language}}</p>
+            <div class="card-text">
+              <p><strong>Latest Episode: </strong> {{latesttvser?.last_episode_to_air.episode_number}}</p>
+              <p><strong>Season Number: </strong> {{latesttvser?.last_episode_to_air.season_number}}</p>
+              <p><strong>Air Date: </strong> {{latesttvser?.last_episode_to_air.air_date}}</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row" *ngFor='let countr of latesttvser.origin_country'>
+          <div class="col-md-12">
+              <p><strong>On Country: </strong> {{item?.origin_country}}</p>
+          </div>
+        </div>
+      <div class="row" *ngFor='let network of latesttvser.networks'>
+        <div class="col-md-6">
+          <p><strong>On Channel: </strong> {{network?.name}}</p>
+        </div>
+        <div class="col-md-6">
+          <img class="mx-auto d-block px-1" src="https://image.tmdb.org/t/p/w200{{network.logo_path}}" alt="Image Not Found"
+            id="imgchan">
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

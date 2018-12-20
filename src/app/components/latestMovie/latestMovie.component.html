@@ -1,0 +1,22 @@
+<div class="container">
+    <div *ngIf='latestmov' class="col-md-12">
+      <div class="card">
+        <div class="card-title">
+          <h1><strong>Name: </strong> {{latestmov.original_title}}</h1>
+          <img class="mx-auto d-block" src="https://image.tmdb.org/t/p/w300{{latestmov.poster_path}}" id="imgcard">  
+        </div>
+        <div class="card-body">
+          <hr>
+          <p><strong>Overview: </strong>{{latestmov.overview}}</p>
+            <p><strong>Realease Date: </strong> {{latestmov.release_date}}</p>
+            <div class="card-text">
+              <p><strong>Status: </strong> {{latestmov.status}}</p>
+              <p><strong>Slogan: </strong> {{latestmov.tagline}}</p>
+              <p><strong>Original Title: </strong> {{latestmov.original_title}}</p>
+              <p><strong>Language: </strong> {{latestmov.original_language}}</p>
+              <p><strong>Vote: </strong> {{latestmov.vote_average}}</p>
+            </div>
+          </div>
+      </div>
+    </div>
+  </div>

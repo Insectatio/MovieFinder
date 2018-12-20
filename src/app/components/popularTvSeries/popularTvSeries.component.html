@@ -1,0 +1,34 @@
+<div class="container">
+    <div class="card-header">
+      <h1 class="my-0" id="title">Popular Tv Series List: </h1>
+    </div>
+    <div class="row">
+      <div class="col-md-6 align-items-stretch" *ngFor="let items of poptvser">
+        <div class="card">
+          <div class="card-title mx-auto d-block">
+            <h1><strong>{{items.name}}</strong> </h1>
+          </div>
+          <img class="mx-auto d-block" src="https://image.tmdb.org/t/p/w500{{items.backdrop_path}}" id="tvserimg">
+          <div class="card-body">
+            <div class="row">
+              <div class="col-md-6">
+                <p><strong>Popularity: </strong> {{items.popularity}}</p>
+                <p><strong>First Air Date: </strong> {{items.first_air_date}}</p>
+                <p><strong>Original Name: </strong> {{items.original_name}}</p>
+              </div>
+              <div class="col-md-6">
+                  <p><strong>Vote Count: </strong> {{items.vote_count}}</p>
+                  <p><strong>Vote Avarage: </strong> {{items.vote_average}}</p>
+                  <p><strong>Original Language: </strong>{{items.original_language}}</p>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-12">
+                <p><strong>Overview: </strong>{{items.overview}}</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>

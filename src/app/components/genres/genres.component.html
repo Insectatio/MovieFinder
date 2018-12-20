@@ -1,0 +1,32 @@
+<div class="row" id="rowbase">
+  <div class="container" id="left">
+      <div class="card-header" id="headerone">
+          <h1 class="my-0">Movie Genres List</h1>
+        </div>
+    <div class="row">
+      <div class="col-md-4 align-items-stretch" *ngFor="let movie of moviegen" id="moviegenr">
+        <div class="card" id="cardone">
+          <div class="card-body">
+            <p class="card-title" id="title1"><strong>{{movie.name}}</strong></p>
+            <a href="#" class="btn btn-warning btn-outline-dark btn-md my-1 my-sm-0 px-4">Genre List</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container" id="right">
+      <div class="card-header" id="headertwo">
+          <h1 class="my-0">Tv Series Genres List</h1>
+        </div>
+    <div class="row">
+      <div class="col-md-4 align-items-stretch" *ngFor="let tvser of tvgen" id="tvsergenr">
+        <div class="card" id="cardtwo">
+          <div class="card-body">
+            <p class="card-text" id="title2"><strong>{{tvser.name}}</strong></p>
+            <a href="#" class="btn btn-warning btn-outline-light btn-md my-1 my-sm-0 px-4">Genre List</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

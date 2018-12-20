@@ -1,0 +1,31 @@
+#title {
+    color: white;
+    padding-bottom: 10px;
+    padding-top: 20px;
+}
+
+.col-md-6 {
+    padding: 20px;
+}
+
+.card {
+    border-radius: 20px;
+    box-shadow: 0px 5px 15px rgb(238, 177, 10);
+}
+
+#movimg {
+    padding-top: 10px;
+    border-radius: 30px;
+    box-shadow: 0px 5px 15px rgb(151, 151, 151);
+}
+
+
+.card-title {
+    justify-content: center;
+    display: block;
+    margin-top: 15px;
+}
+
+.card-title > h1 {
+   font-size: x-large;
+}

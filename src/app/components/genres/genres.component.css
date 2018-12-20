@@ -1,0 +1,68 @@
+
+#headerone > h1 {
+    color: rgb(255, 255, 255); 
+  }
+
+  #cardone {
+    align-items: center;
+    border-radius: 10px;
+    background-image: url(http://i67.tinypic.com/2najole.png);
+  }
+
+    #cardtwo {
+      align-items: center;
+        border-radius: 10px;
+        background-image: url(http://i63.tinypic.com/vsjnlf.jpg);
+        color: white;
+      }
+
+      #left{
+        padding-top: 10px;
+        float:left;
+        width:50%;
+        
+      }
+
+      #right{
+        padding-top: 10px;
+        float:right;
+        width:50%;
+        left: 10px;
+      }
+
+      #tvsergenr {
+        border-radius: 10px;
+        padding: 20px;
+    }
+    
+    #moviegenr {
+      border-radius: 10px;
+      padding: 20px;
+    }
+
+    
+    .container {
+        width: 100%;
+        position: initial
+    }
+
+    #headertwo > h1 {
+        color: rgb(255, 255, 255); 
+    }
+    
+    .btn-warning {
+      border-radius: 40px;
+    }
+
+    #title2 {
+      font-size: large; 
+    }
+    #title1 {
+      font-size: large; 
+    }
+
+    .card {
+      box-shadow: 0px 5px 15px rgb(238, 177, 10);
+    }
+
+

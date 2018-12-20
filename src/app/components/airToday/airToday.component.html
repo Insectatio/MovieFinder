@@ -1,0 +1,21 @@
+<div class="container">
+  <div class="col-md-12" *ngFor="let items of airtoday">
+    <div class="card">
+      <div class="card-title">
+        <h1><strong>Name: </strong> {{items.original_name}}</h1>
+      </div>
+      <div class="card-body">
+        <img class="mx-auto d-block" src="https://image.tmdb.org/t/p/w500{{items.backdrop_path}}" id="imgcard">
+        <hr>
+          <p><strong>Realease Date: </strong> {{items.first_air_date}}</p>
+          <p><strong>Popularity: </strong> {{items.popularity}}</p>
+          <p><strong>Origin Country: </strong> {{items.origin_country}}</p>
+          <div class="card-text">
+            <p><strong>Language: </strong> {{items.original_language}}</p>
+            <p><strong>Rating: </strong> {{items.vote_average}}</p>
+            <p><strong>Overview: </strong> {{items.overview}}</p>
+          </div>
+        </div>
+    </div>
+  </div>
+</div>

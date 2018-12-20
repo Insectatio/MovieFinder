@@ -1,0 +1,33 @@
+<div class="container">
+  <div class="card-header">
+    <h1 id="title" class="my-0">Popular Movies List: </h1>
+  </div>
+  <div class="row">
+    <div class="col-md-6 align-items-stretch" *ngFor="let popmovies of popmovie">
+      <div class="card">
+        <div class="card-title mx-auto d-block">
+          <h1><strong>{{popmovies.title}}</strong> </h1>
+        </div>
+        <img class="mx-auto d-block" src="https://image.tmdb.org/t/p/w200{{popmovies.poster_path}}" id="movimg">
+        <div class="card-body">
+          <div class="row">
+            <div class="col-md-6">
+              <p><strong>Popularity: </strong> {{popmovies.popularity}}</p>
+              <p><strong>Rating: </strong> {{popmovies.vote_average}}</p>
+            </div>
+            <div class="col-md-6">
+                <p><strong>Vote Count: </strong> {{popmovies.vote_count}}</p>
+              <p><strong>Language: </strong> {{popmovies.original_language}}</p>
+              <p><strong>Realease Date: </strong> {{popmovies.release_date}}</p>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-12">
+              <p><strong>Overview: </strong>{{popmovies.overview}}</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

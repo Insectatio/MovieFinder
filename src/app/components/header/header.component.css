@@ -1,0 +1,46 @@
+.navbar-expand {
+    background-color: rgba(177, 177, 177, 0.288);
+    border-color: rgb(255, 255, 255);
+    border-bottom-left-radius: 50px 20px;
+    border-bottom-right-radius: 50px 20px;
+    /* box-shadow: 0px 10px 25px rgb(187, 187, 187); */
+    box-shadow: 0px 5px 15px rgb(238, 177, 10);
+}
+
+.material-icons {
+    position: relative;
+    top: 4px;
+    margin-right: 3px;
+}
+
+.card {
+    border-radius: 30px;
+    padding-left: 10px;
+    box-shadow: 0px 8px 15px rgb(104, 103, 103);
+    background-color: rgb(253, 253, 253);
+}
+
+#cardone {
+    margin-left: 20px;
+}
+
+#cardtwo {
+    margin-right: 20px;
+}
+
+#homeicon {
+    border-radius: 10px;
+}
+
+#homeiconz {
+    position: relative;
+    top: 3px;
+    margin-right: 2px;
+    font-size: 3.0em;
+}
+
+#home {
+    border-radius: 100px;
+    height:100px;
+    width:100px;
+}
