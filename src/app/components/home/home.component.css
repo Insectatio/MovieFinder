@@ -47,3 +47,21 @@
 .card-text {
     padding-bottom: 40px;
 }
+
+#card1 {
+    border-radius: 20px;
+}
+
+#card2 {
+    border-radius: 20px;
+}
+
+#btn1 {
+    border-bottom-left-radius: 50px 20px;
+    border-bottom-right-radius: 50px 20px;
+}
+
+#btn2 {
+    border-bottom-left-radius: 50px 20px;
+    border-bottom-right-radius: 50px 20px;
+}

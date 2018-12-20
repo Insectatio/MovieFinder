@@ -1,17 +1,16 @@
 <div class="container-fluid">
     <div class="row">
         <div class="col-md-2" id="card1home">
-            <div class="card text-white bg-warning mb-3">
+            <div class="card text-white bg-warning mb-3" id="card1">
                 <div class="card-header">Movie Now Playing</div>
                 <div class="card img-fluid" style="width:600px; height: 300px;">
-                        <img class="card-img-top" src="https://mxcity.mx/wp-content/uploads/2017/01/autocinema.jpg"
-                        alt="Card image">
+                    <img class="card-img-top" src="https://mxcity.mx/wp-content/uploads/2017/01/autocinema.jpg" alt="Card image">
                     <div class="card-img-overlay">
                         <h5 class="card-title">List of movies that are currently on theatre.</h5>
-                        <p class="card-text" style="font-size: 15px;">Here is a list of the latest movies on the theatre. </p>
+                        <p class="card-text" style="font-size: 15px;">Here is a list of movies in the theatre. </p>
                     </div>
                 </div>
-                <button routerLink="/airtoday" type="button" class="btn btn-warning">Go To</button>
+                <button routerLink="/movienowplaying" type="button" class="btn btn-warning" id="btn1">Go To</button>
             </div>
         </div>
         <div class="col-md-8">
@@ -80,19 +79,20 @@
                 </div>
             </div>
         </div>
-        <div class="col-md-2" id="card1home">
-                <div class="card text-white bg-warning mb-3">
-                    <div class="card-header">Tv Shows On Air</div>
-                    <div class="card img-fluid" style="width:600px; height: 300px;">
-                            <img class="card-img-top" src="https://marketingland.com/wp-content/ml-loads/2014/08/tv-video-ss-1920-800x450.jpg"
-                            alt="Card image">
-                        <div class="card-img-overlay">
-                            <h5 class="card-title">List of shows that are currently on the air.</h5>
-                            <p class="card-text" style="font-size: 15px;">Any TV show that has an episode with an air date in the next 7 days.</p>
-                        </div>
+        <div class="col-md-2" id="card2home">
+            <div class="card text-white bg-warning mb-3" id="card2">
+                <div class="card-header">Tv Shows On Air</div>
+                <div class="card img-fluid" style="width:600px; height: 300px;">
+                    <img class="card-img-top" src="https://marketingland.com/wp-content/ml-loads/2014/08/tv-video-ss-1920-800x450.jpg"
+                        alt="Card image">
+                    <div class="card-img-overlay">
+                        <h5 class="card-title">List of shows that are currently on air.</h5>
+                        <p class="card-text" style="font-size: 15px;">Here is a list of the latest Tv Series on the
+                            theatre. </p>
                     </div>
-                    <button routerLink="/airtoday" type="button" class="btn btn-warning">Go To</button>
                 </div>
+                <button routerLink="/tvonair" type="button" class="btn btn-warning" id="btn2">Go To</button>
             </div>
+        </div>
     </div>
 </div>

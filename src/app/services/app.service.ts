@@ -17,6 +17,8 @@ import { TopRatedTvSeries } from '../models/topRatedTvSeries';
 import { PopularTvSeries } from '../models/popularTvSeries';
 import { LatestTvSeries } from '../models/latestTvSeries';
 import { AiringTodayTvSeries } from '../models/airingTodayTvSeries';
+import { TvOnAir } from '../models/tvOnAir';
+import { MovieNowPlaying } from '../models/movieNowPlaying';
 
 @Injectable({
   providedIn: 'root'
@@ -97,6 +99,16 @@ export class AppService {
 
   getAiringTodayTvSeries() {
     return this.http.get<AiringTodayTvSeries>('https://api.themoviedb.org/3/tv/airing_today?api_key=' + environment.api_key, {
+    });
+  }
+
+  getTvOnAir() {
+    return this.http.get<TvOnAir>('https://api.themoviedb.org/3/tv/on_the_air?api_key=' + environment.api_key, {
+    });
+  }
+
+  getMovieNowPlaying() {
+    return this.http.get<MovieNowPlaying>('https://api.themoviedb.org/3/movie/now_playing?api_key=' + environment.api_key, {
     });
   }
 

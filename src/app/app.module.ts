@@ -13,6 +13,8 @@ import { LatestMovieComponent } from './components/latestMovie/latestMovie.compo
 import { LatestTvSeriesComponent } from './components/latestTvSeries/latestTvSeries.component';
 import { PopularMoviesComponent } from './components/popularMovies/popularMovies.component';
 import { PopularTvSeriesComponent } from './components/popularTvSeries/popularTvSeries.component';
+import { TvOnAirComponent } from './components/tvOnAir/tvOnAir.component';
+import { MovieNowPlayingComponent } from './components/movieNowPlaying/movieNowPlaying.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +26,9 @@ import { PopularTvSeriesComponent } from './components/popularTvSeries/popularTv
     LatestMovieComponent,
     LatestTvSeriesComponent,
     PopularMoviesComponent,
-    PopularTvSeriesComponent
+    PopularTvSeriesComponent,
+    TvOnAirComponent,
+    MovieNowPlayingComponent
   ],
   imports: [
     BrowserModule,

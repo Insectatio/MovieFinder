@@ -6,6 +6,8 @@ import { LatestMovieComponent } from './components/latestMovie/latestMovie.compo
 import { LatestTvSeriesComponent } from './components/latestTvSeries/latestTvSeries.component';
 import { PopularMoviesComponent } from './components/popularMovies/popularMovies.component';
 import { PopularTvSeriesComponent } from './components/popularTvSeries/popularTvSeries.component';
+import { TvOnAirComponent } from './components/tvOnAir/tvOnAir.component';
+import { MovieNowPlayingComponent } from './components/movieNowPlaying/movieNowPlaying.component';
 
 const routes: Routes = [
   { path: '', component: HomeComponent },
@@ -14,6 +16,8 @@ const routes: Routes = [
   { path: 'latesttvserie', component: LatestTvSeriesComponent },
   { path: 'popularmovie', component: PopularMoviesComponent },
   { path: 'populartvseries', component: PopularTvSeriesComponent },
+  { path: 'movienowplaying', component: MovieNowPlayingComponent },
+  { path: 'tvonair', component: TvOnAirComponent },
   { path: 'airtoday', component: AirTodayComponent },
   { path: '**', component: HomeComponent }
 ];

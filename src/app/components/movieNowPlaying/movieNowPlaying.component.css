@@ -13,7 +13,7 @@
     box-shadow: 0px 5px 15px rgb(238, 177, 10);
 }
 
-#movimg {
+#movienowimg {
     border-radius: 30px;
     box-shadow: 0px 5px 15px rgb(151, 151, 151);
 }
@@ -27,4 +27,9 @@
 
 .card-title > h1 {
    font-size: x-large;
+}
+
+#movienowimg2 {
+    border-radius: 30px;
+    box-shadow: 5px 5px 5px rgb(151, 151, 151);
 }

@@ -1,0 +1,35 @@
+<div class="container">
+    <div class="card-header">
+      <h1 class="my-0" id="title">Movie Now Playing: </h1>
+    </div>
+    <div class="row">
+      <div class="col-md-6 align-items-stretch" *ngFor="let item of movieNowPlaying">
+        <div class="card">
+          <div class="card-title mx-auto d-block">
+            <h1><strong>{{item.title}}</strong> </h1>
+          </div>
+          <img class="mx-auto d-block" src="https://image.tmdb.org/t/p/w500{{item.backdrop_path}}" id="movienowimg">
+          <div class="card-body">
+            <div class="row">
+              <div class="col-md-6">
+                <p><strong>Popularity: </strong> {{item.popularity}}</p>
+                <p><strong>First Air Date: </strong> {{item.first_air_date}}</p>
+              </div>
+              <div class="col-md-6">
+                <p><strong>Vote Avarage: </strong> {{item.vote_average}}</p>
+                <p><strong>Original Title: </strong> {{item.original_title}}</p>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-12">
+                <img class="mx-auto d-block" src="https://image.tmdb.org/t/p/w200{{item.poster_path}}" id="movienowimg2">
+                <hr>
+                <p><strong>Original Language: </strong>{{item.original_language}}</p>
+                <p><strong>Overview: </strong>{{item.overview}}</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
