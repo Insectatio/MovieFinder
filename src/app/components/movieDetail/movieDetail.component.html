@@ -1,0 +1,30 @@
+<div class="container">
+  <div *ngIf='movdetails' class="col-md-12">
+    <div class="card">
+      <div class="card-title mx-auto d-block">
+        <h1><strong>Name: </strong> {{movdetails.original_title}}</h1>
+        <br>
+        <img class="mx-auto d-block" src="https://image.tmdb.org/t/p/w500{{movdetails.backdrop_path}}" id="imgcard">
+      </div>
+      <hr>
+      <div class="row">
+        <div class="col-md-6">
+          <div class="card-body mx-auto d-block">
+            <p><strong>Original Language: </strong>{{movdetails.original_language}}</p>
+            <p><strong>Popularity: </strong>{{movdetails.popularity}}</p>
+            <p><strong>Realease Date: </strong>{{movdetails.release_date}}</p>
+            <p><strong>Tagline: </strong> {{movdetails.tagline}}</p>
+          </div>
+        </div>
+        <div class="col-md-6">
+            <img class="mx-auto d-block px-1" src="https://image.tmdb.org/t/p/w200{{movdetails.poster_path}}" alt="Image Not Found"
+            id="imgchan">
+          <a href="{{movdetails.homepage}}"><button type="button" class="btn btn-lg btn-warning py-4 mx-auto d-block" id="btnweb">Go To The Website</button></a>
+        </div>
+      </div>
+      <div class="card-text">
+        <p><strong>Overview: </strong> {{movdetails.overview}}</p>
+      </div>
+    </div>
+  </div>
+</div>

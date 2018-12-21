@@ -8,6 +8,8 @@ import { PopularMoviesComponent } from './components/popularMovies/popularMovies
 import { PopularTvSeriesComponent } from './components/popularTvSeries/popularTvSeries.component';
 import { TvOnAirComponent } from './components/tvOnAir/tvOnAir.component';
 import { MovieNowPlayingComponent } from './components/movieNowPlaying/movieNowPlaying.component';
+import { TvSeriesDetailComponent } from './components/tvSeriesDetail/tvSeriesDetail.component';
+import { MovieDetailComponent } from './components/movieDetail/movieDetail.component';
 
 const routes: Routes = [
   { path: '', component: HomeComponent },
@@ -17,6 +19,8 @@ const routes: Routes = [
   { path: 'popularmovie', component: PopularMoviesComponent },
   { path: 'populartvseries', component: PopularTvSeriesComponent },
   { path: 'movienowplaying', component: MovieNowPlayingComponent },
+  { path: 'tvseriesdetail/:id', component: TvSeriesDetailComponent },
+  { path: 'moviedetail/:id', component: MovieDetailComponent },
   { path: 'tvonair', component: TvOnAirComponent },
   { path: 'airtoday', component: AirTodayComponent },
   { path: '**', component: HomeComponent }

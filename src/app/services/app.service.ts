@@ -19,6 +19,8 @@ import { LatestTvSeries } from '../models/latestTvSeries';
 import { AiringTodayTvSeries } from '../models/airingTodayTvSeries';
 import { TvOnAir } from '../models/tvOnAir';
 import { MovieNowPlaying } from '../models/movieNowPlaying';
+import { TvDetail } from '../models/tvDetail';
+import { MovieDetail } from '../models/movieDetail';
 
 @Injectable({
   providedIn: 'root'
@@ -109,6 +111,16 @@ export class AppService {
 
   getMovieNowPlaying() {
     return this.http.get<MovieNowPlaying>('https://api.themoviedb.org/3/movie/now_playing?api_key=' + environment.api_key, {
+    });
+  }
+
+  getTvSeriesDetails(id: any) {
+    return this.http.get<TvDetail>('https://api.themoviedb.org/3/tv/' + id +'?api_key=' + environment.api_key, {
+    });
+  }
+
+  getMovieDetails(id: any) {
+    return this.http.get<MovieDetail>('https://api.themoviedb.org/3/movie/' + id + '?api_key=' + environment.api_key, {
     });
   }
 

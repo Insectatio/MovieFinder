@@ -8,7 +8,7 @@
           <div class="card-title mx-auto d-block">
             <h1><strong>{{item.title}}</strong> </h1>
           </div>
-          <img class="mx-auto d-block" src="https://image.tmdb.org/t/p/w500{{item.backdrop_path}}" id="movienowimg">
+          <a routerLink="/moviedetail/{{item.id}}"><img class="mx-auto d-block" src="https://image.tmdb.org/t/p/w500{{item.backdrop_path}}" id="movienowimg"></a>
           <div class="card-body">
             <div class="row">
               <div class="col-md-6">
